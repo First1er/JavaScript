@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ACCEUIL</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="page">
+
+        <!-- Mon en-tête -->
+        <div>
+            <h1 class="white"> RESTAURENT EN LIGNE</h1>
+            <h5 class="white"> LA QUALITÉ AU SERVICE DE L'EXCÉLLENCE </h5>
+            <h6 id="blink"> Passez votre commande et faites-vous <br> livrer dans les plus brefs délais.</h6>
+        <!-- Ma bar de navigation -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light nav-pills">
+                <a class="navbar-brand">MON RESTAURENT</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#entre" role="tab" aria-controls="home" aria-selected="true">Entrées</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#plat" role="tab" aria-controls="plat" aria-selected="false">Plats De Resistances</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#dessert" role="tab" aria-controls="dessert" aria-selected="false">Dessert</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#apperitif" role="tab" aria-controls="apperitif" aria-selected="false">Appéritifs</a>
+                        </li>
+                       
+                    </ul>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="#contact"> <button class="btn btn-primary">Nous Contact</button></a>
+                        </li>
+                    </ul>
+                    
+                  <ul class="navbar-nav mr-auto" id="panier">
+                    <li class="nav-item">
+                        <a href="panier.html"><button type="button" class="btn btn-success"><i class="fas fa-shopping-cart"></i>
+                             Mon panier <span class="badge badge-pill badge-light"></span>
+                            <span class="sr-only"></span>
+                        </button></a>
+                    </li>
+                        
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0" id="forminscription">
+                        <input class="form-control mr-sm-2 my-lg-1" type="email" placeholder="Votre email" aria-label="email">
+                        <input class="form-control mr-sm-2 my-lg-1" type="password" placeholder="Mot de passe" aria-label="password">
+                        <button class="btn btn-outline-success my-2 my-sm-1" type="submit"><i class="fas fa-sign-in-alt"></i> Connection</button>
+                    </form>
+                </div>
+            </nav>
+
+            <div class="tab-content container" id="myTabContent">
+                <div class="tab-pane fade show active" id="entre" role="tabpanel" aria-labelledby="entre-tab"><br>
+                    <h4 class="titre">Recettes d'entrées froides et chaudes</h4>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/salade-de-chevre-chaud.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Salade de chèvre chaud</div>
+                            <button onclick="ajouter('nom1');" type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/tartinesdesaumon.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Tartine de saumon fumé au fromage frais</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/soupe-a-la-carotte.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Soupe de carotte</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/salade-de-chevre-chaud.jpg" alt="" class="img-thumbnail">
+                            <div class="noms"> Feuilleté au chèvres et aux pommes </div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/salade-de-chevre-chaud.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Mini quiches aux aspèrges et tomates</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/salade-de-betterave.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Salade de batterave</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail" >
+                            <img src="img/soupe-aux-brocolis.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Soupe aux brocolis</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/salade-de-chevre-chaud.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Avocat aux crevettes </div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/gaspacho.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Gaspacho</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/soupe-aux-legumes-verts.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Soupe aux légumes verts/div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="tab-pane fade" id="plat" role="tabpanel" aria-labelledby="plat-tab">
+                    contenue plat
+                    <h4 class="titre">Recettes de plats de resistances</h4>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/brochettes-de-poulet-au-barbecue.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Brochetes de poulet au barbecue</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/escalope-de-poulet-a-la-moutarde.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Ecalope de poulet à la moutarde</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/pommes-de-terre-sauce-ciboulette.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Pomme de terre sauce ciboulette</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/fajitas.jpg" alt="" class="img-thumbnail">
+                            <div class="noms"> Fajitas </div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/salade-de-pates-a-la-feta.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Salades de pâtes à la fêta</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/filets-de-cabillaud-a-la-moutarde.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Filets de cabillaud à la moutarde</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail" >
+                            <img src="img/salade-de-pommes-de-terre-au-thon.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Salades de pommes de terre au thon</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/tagliatelles-cepes.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Tagliatèlles aux cèpes</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/spaghetti-alla-carbonara.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Spaguetty à la carbonara</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/croque-monsieur.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Croque Monsieur</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail" >
+                            <img src="img/hamburger.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Hamburger</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/poulet-au-curry-indien.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Poulet au curry Indien</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="dessert" role="tabpanel" aria-labelledby="dessert-tab">
+                    contenue dessert
+                    <h4 class="titre">Recettes de desserts</h4>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/cake-aux-pepites-de-chocolat.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Cake aux pépites de chocolats</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/verrines-de-framboises.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Verrines de framboises</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/creme-au-chocolat.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Creme au chocolat</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/creme-brulee.jpg" alt="" class="img-thumbnail">
+                            <div class="noms"> Creme brulée </div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/madeleines.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Madelaines</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/" alt="" class="img-thumbnail">
+                            <div class="noms">Glasse à la vanille</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail" >
+                            <img src="img/cookies-aux-petites-de-chocolat.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Cookies aux pépites de chocolat</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/gateau-aux-poires.jpg" alt="" class="img-thumbnail">
+                            <div class="noms"> Gateaux aux poires </div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/gaspacho.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Gaspacho</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/soupe-aux-legumes-verts.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Soupe aux légumes verts/div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail" >
+                            <img src="img/salade-de-chevre-chaud.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Salade aux provres roquefort</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/salade-de-chevre-chaud.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Salade de chèvre chaud</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="apperitif" role="tabpanel" aria-labelledby="apperitif-tab">
+                    contenue apperitfs 
+                    <h4 class="titre">Recettes d'appéritifs</h4>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/tzatziki.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Tzatziki</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/houmous.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Houmous faciles</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/poivrons-marines-ail.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Poivrons marinés à l'aie</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/toasts-aperitifs-legumes.jpg" alt="" class="img-thumbnail">
+                            <div class="noms"> Toasts apéritifs aux légumes </div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/cake-aux-olives.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Cakes aux olives </div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/tapenade-verte.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Tapenade verte</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail" >
+                            <img src="img/canneles-au-saumon-fume.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Cannelés aux saumon fumée</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/caviar-de-poivrons.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Caviars aux poivrons </div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/blinis.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Blinis</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/soupe-a-la-carotte.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Sauce salsa</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail" >
+                            <img src="img/confiture-de-figues.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Confitures de figues</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 thumbnail">
+                            <img src="img/salade-de-chevre-chaud.jpg" alt="" class="img-thumbnail">
+                            <div class="noms">Salade de chèvre chaud</div>
+                            <button type="button" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+            </div> <br>
+
+            <!-- Partie contacts -->
+
+            <div class="contact container-fluid" id="contact">
+                
+                <div class="row ">
+                    <div class="col-md-6" >
+                        Vos messages, préoccupations et requêtes seront les bienvenus et ne ferons que booster notre rendu; <br>Merci de vous exprimer!
+                        <form class="form-group my-2 my-lg-2">
+                            <input class="form-control mr-sm-2 my-lg-3" type="email" placeholder="Votre adresse email">
+                            <textarea class="form-control mr-sm-2 my-lg-3" name="message" id="" cols="30" rows="10"></textarea>
+                            <button class="form-control btn btn-outline-success my-2 my-sm-0" type="submit"> <span class="white">  ENVOYER </span></button>
+                        </form>
+                    </div>
+
+                    <!--  -->
+
+                    <div class="col-md-6 vip">
+                        Vous avez desormais la possibilité de chatter avec un agent du restaurent. <br>
+                        Vous n'avez qu'à vous inscrire en tant que client VIP <br>
+                        Plusieurs privilèges vous attendent. <br>
+                        Juste un seul clic pour en bénéficier, à vous de choisir... <br><br><br><br><br>
+                        
+                        <center> <a  href="inscription.html"> <button class="btn btn-outline-success my-2 my-sm-3 whitebutton"> M'inscrire </button></a></center>  
+                        <div>
+                            
+                          
+                        </div>
+
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+        
+    </div>
+    
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
